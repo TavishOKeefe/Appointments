@@ -1,0 +1,14 @@
+#apptForm {
+  width: 30%;
+}
+
+img {
+  width: 400px;
+  float: right;
+  border: 3px solid black;
+  margin: 10px;
+}
+
+#output {
+  margin-top: 5em;
+}
