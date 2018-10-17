@@ -1,4 +1,4 @@
-#apptForm {
+#apptForm, #survey {
   width: 30%;
 }
 
@@ -10,5 +10,10 @@ img {
 }
 
 #output {
+  font-weight: bold;
   margin-top: 5em;
+}
+
+.hide {
+  display: none;
 }

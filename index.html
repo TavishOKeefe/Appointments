@@ -10,15 +10,26 @@
   </head>
   <body>
     <div class="container">
-      <h1>Book and appointment today!</h1>
+      <h1 id="welcome">Book and appointment today!</h1>
+      <div id="booked" class="hide">
+        <h1>Your appointment is set! Here are the details:</h1>
+        <div id="output">
+          <p id="success"></p>
+          <p id="name"></p>
+          <p id="purpose"></p>
+          <p id="dateTime"></p>
+        </div>
+
+        <h3>Please take a moment to fill out the survey below.</h3>
+      </div>
       <!-- <img src="img/download.jpeg"> -->
 
       <form id="apptForm">
         <div class="form-group">
-          <label for="first-name">first name</label>
-          <input id="first-name" class="form-control" type="text">
-          <label for="last-name">last name</label>
-          <input id="last-name" class="form-control" type="text">
+        <label for="first-name">first name</label>
+        <input id="first-name" class="form-control" type="text">
+        <label for="last-name">last name</label>
+        <input id="last-name" class="form-control" type="text">
         </div>
 
         <div class="form-group">
@@ -36,15 +47,65 @@
           <input id="end" class="form-control" type="time">
         </div>
 
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-success" >Submit</button>
+      </form>
+
+      <div>
+        <form id="survey" class="hide">
+          <select class="form-control">
+            <option value="">stuff</option>
+            <option value="">things</option>
+            <option value="">animals</option>
+            <option value="">underwear</option>
+          </select>
+
+          <div class="radio">
+            <label for="reason">
+              <input type="radio"  name="random" value="">
+              Roses
+            </label>
+          </div>
+
+          <div class="radio">
+            <label for="reason">
+              <input type="radio"  name="random" value="">
+              Daisies
+            </label>
+          </div>
+
+          <div class="radio">
+            <label for="reason">
+              <input type="radio"  name="random" value="">
+              Callowlillies
+            </label>
+            </div>
+
+            <div>
+              <label for="reason">
+                <input type="checkbox" name="" value="">
+                skateboard
+              </label>
+            </div>
+            <div>
+              <label for="reason">
+                <input type="checkbox" name="" value="">
+                carpet
+              </label>
+            </div>
+            <div>
+              <label for="reason">
+              <input type="checkbox" name="" value="">
+              windows
+            </label>
+          </form>
+        </div>
+
+        <button type="submit" class="btn btn-success hide" id="surveybtn">Submit</button>
 
       </form>
-      <div id="output">
-        <p id="success"></p>
-        <p id="name"></p>
-        <p id="purpose"></p>
-        <p id="dateTime"></p>
+
       </div>
+
     </div>
   </body>
 </html>
